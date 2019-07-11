@@ -1,0 +1,152 @@
+\documentclass[a0paper,portrait]{baposter}
+
+\usepackage{lipsum}          % This is just for some blindtext
+
+\usepackage{relsize}	       % For \smaller
+\usepackage{url}			       % For \url
+\usepackage{epstopdf}	       % Included EPS files automatically converted to PDF to include with pdflatex
+\usepackage{multicol}        % Multi Columns
+
+\usepackage{amsmath,amssymb} % math
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Utility functions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Save space in lists. Use this after the opening of the list %%%%%%%%%%%%%%%%
+\renewcommand{\vec}[1]{\bm{#1}}
+\newcommand{\vnabla}{\vec{\nabla}}
+
+\renewcommand{\d}[1]{\text{d} #1}
+\newcommand{\dxx}{\,\text{d}\vec{x}}
+\newcommand{\dx}{\,\text{d}x}
+
+\newcommand{\diff}[2]{\frac{\text{d}#1}{\text{d}#2}}
+\newcommand{\idiff}[2]{\text{d}#1 / \text{d}#2}
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\pdifff}[2]{\frac{\partial^2 #1}{\partial #2^2}}
+\newcommand{\ipdiff}[2]{\partial #1 / \partial #2}
+\newcommand{\vdiff}[2]{\frac{\delta #1}{\delta #2}}
+\newcommand{\ivdiff}[2]{\delta #1 / \delta #2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Document Start %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\typeout{Poster rendering started}
+
+%%% General Poster Settings %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% Eye Catcher, Title, Authors and University Images %%%%%%%%%%%%%%%%%%%%%%
+\begin{poster}{
+  columns=2,
+	grid=false,
+	borderColor=black,
+	headerColorOne=black,
+	headerColorTwo=black,
+	headerFontColor=white,
+    headerheight=20em,
+	boxColorOne=white,
+    boxpadding=1em,
+	headershape=rounded,
+	headerfont=\Large\textsf,
+	textborder=rounded,
+	background=shadetb,
+    bgColorOne=white!10,
+    bgColorTwo=white!30,
+	headerborder=open,
+    boxshade=plain,
+    eyecatcher=false
+}
+%%% Eye Cacther %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{
+}
+%%% Title %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\smaller Transcendental function :  \sigma \quad   (Standard Deviation) }
+%%% Authors %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{
+  \vspace{1em}
+  	{\smaller 	Problem No .1}\\
+  Basant Gera  ( Student ID : 40082433)\\
+	{\smaller Basantgera29@gmail.com}
+
+}
+%%% Logo %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\begin{minipage}{20.0em}
+    \includegraphics[height=5em]{Concordia.jpg}
+  \end{minipage}
+}
+
+%%% Abstract %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\headerbox{Brief Description of \sigma \quad   (Standard Deviation)}{name=abstract,column=0,row=0,span=2,height=0.35}{
+\begin{multicols}{2} 
+ % \lipsum[2-4]
+  The Standard Deviation is a measure of how spread out numbers are. It is symbol {\sigma}  the Greek letter sigma.The formula is easy and is square root of variance.The standard deviation is a statistic that measures the dispersion of a data set relative to its mean. It is calculated as the square root of variance by determining the variation between each data point relative to the mean. If the data points are further from the mean, there is a higher deviation within the data set; thus, the more spread out the data, the higher the standard deviation.It is a statistical measurement in finance that, when applied to the annual rate of return of an investment, sheds light on the historical volatility of that investment. The greater the standard deviation of securities, the greater the variance between each price and the mean, which shows a larger price range. For example, a volatile stock has a high standard deviation, while the deviation of a stable blue-chip stock is usually rather low.\\
+  \\
+  \\
+  Here is the formula for standard deviation : {\quad \sigma} -\\
+  \\
+  \begin{equation*}
+   (Standard Deviation) \quad \sigma = \sqrt\frac{{\Sigma (x- \overline{x})^2}}{n}
+  \end{equation*}
+  
+  \sigma \quad= Lower case sigma\\
+  \quad\Sigma \quad = Capital sigma\\
+  \quad$\overline{x}\quad $= x bar\\
+  
+
+  To calculate the variance, follow these steps :
+ \begin{itemize}
+  \item 	Work out the Mean the simple average of the numbers.
+  \item  	Then for each number: subtract the Mean and square the result the squared difference.
+  \item     Then work out the average of those squared differences.
+\end{itemize}
+
+\end{multicols}
+}
+
+%%% Box 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\headerbox{Domain  \& co-domain of \sigma \quad   (Standard Deviation)}{name=box1,column=0,below=abstract,above=bottom}{
+  \begin{columns}
+    \column{1.0\textwidth}
+\textbf{Domain} are the values which can go into the function.\\
+\textbf{Domain}: {Data set of values which contains natural and real numbers and can be till Infinity}.\\
+\textbf{Co domain} are the possibly value which come out of function.\\
+\textbf{Co domain}: {Value which are not negative and can be natural number or decimal number}.\\
+    \column{1.0\textwidth}
+  \end{columns}%
+
+  \hhrule
+
+}
+
+%%% Box 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\headerbox{Characteristics of \sigma \quad   (Standard Deviation)}{name=box2,column=1,below=abstract,above=bottom}{
+  \begin{equation*}=
+   (Standard Deviation) \quad \sigma = \sqrt\frac{{\Sigma (x- \overline{x})^2}}{n}
+  \end{equation*}
+  
+  \sigma \quad= Lower case sigma\\
+  \quad\Sigma \quad = Capital sigma\\
+  \quad$\overline{x}\quad $= x bar
+  
+  \hhrule
+
+  %\lipsum[1-1]
+  Few characteristics which make the σ function unique which are as follows:
+  \begin{itemize}
+  \item 	Standard deviation is only used to measure spread or dispersion around the mean of a data set.
+  \item  	Standard deviation is never negative. 
+  \item 	For data with approximately the same mean, the greater the spread, the greater the standard deviation
+  \item     If all values of a data set are the same, the standard deviation is zero because each value is equal to the mean. 
+  \item 	When analyzing normally distributed data, standard deviation can be used in conjunction with the mean in order to calculate data intervals.
+\end{itemize}
+
+  \hhrule
+  
+  
+}
+\end{poster}
+
+ 
+\end{document}
