@@ -1,0 +1,149 @@
+\documentclass{article}
+
+
+\usepackage{arxiv}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{lipsum}
+\usepackage{amsmath,amssymb}
+
+\title{Why Standard Deviation Is an Important Statistic ?}
+
+
+\author{
+  Basant Gera (40082433)\thanks{Use footnote for providing further
+    information about author (webpage, alternative
+    address)---\emph{not} for acknowledging funding agencies.} \\
+  Dept. of Computer Science \& Software Engineering\\
+  Concordia University\\
+  \texttt{basantgera29@gmail.com} \\
+  %% examples of more authors
+   \And
+Submitted to : Pankaj Kamthan* \& Team*\\
+   Dept. of Computer Science \& Software Engineering\\
+  Concordia University\\
+  \texttt{kamthan@cse.concordia.ca} \\
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The software industry has grown to become the largest industry. However, it had humble
+beginnings.
+It is likely that calculator was the first ‘educational’ tool that many prospective
+economists, engineers, and scientists, were exposed to during their time in high school,
+and was a tool that could do something that they could not do, sometimes at all and other
+times at the same speed. It should therefore come as no surprise that many operating
+systems provide native support for a calculator.
+A question of interest for a software engineer is how a typical scientific calculator does
+what it is supposed to do. The question may be simple, but the answer is not (as
+simple). The answer is also crucial towards providing an insight as well as an in-depth
+understanding of how more challenging numerical or symbolic calculations are
+performed by the state-of-the-art scientific computing software. 
+\end{abstract}
+
+\section{Goal \& objective.}
+To define requirements of Standard Deviation and how it works and explain their domain and co domain with their functionality how it is calculated with the help of some basic arithmetic symbols and calculate their mean value of data set and than calculating their variance followed by variance square root. 
+
+\section{Calculating the standard deviation.}
+
+\begin{equation*}=
+   (Standard Deviation) \quad \sigma = \sqrt\frac{{\Sigma (x- \overline{x})^2}}{n}
+  \end{equation*}
+  \\
+\begin{center}
+     $\sigma \quad$= Lower case sigma\\
+  $\quad\Sigma \quad$ = Capital sigma\\
+  \quad$\overline{x}\quad $= x bar
+\end{center} 
+  
+ \textbf{Step I)}  Calculate the mean of following numbers or data set given to you. (Yes it can be negative or positive).\\
+  For e.g Numbers given to you can be (600,470,170,430,300).
+  \\\\
+ \textbf{Step II)} After calculating the mean of the following number given to you  Then for each number: subtract the Mean and square the result\ (the squared difference).
+ \\
+ \begin{center}
+                    Mean = $\frac{600 + 470 + 170 + 430 + 300}{5}$  = $\frac{1970}{5}$ =394
+ \end{center} 
+ 
+ \textbf{Step III)} Then work out the average of those squared differences.\\
+  \begin{center}
+        $(Variance)^2$ = $\frac{206^2 + 762^2 + 224^2 + 36^2 + 94^2}{5}$=$\frac{42436 + 5776 + 50176 + 1296 + 8836}{5}$=$\frac{108520}{5}$=21704
+      
+ \end{center} 
+   So, therefore Variance is 21704 Now, Calculating Standard deviation.
+   \\\\
+ \textbf{Step IV)} And the Standard Deviation is just the square root of Variance.(Which needs to be always Positive)\\
+  \begin{center}
+       Standard Deviation= $\sqrt{\sigma}$=$\sqrt{21704}$=147.32=$\textbf{147}$ (to the nearest mm)
+ \end{center} 
+ 
+ \section{Requirements for standard deviation.}
+ Since their are two ways to calculate standard deviation which are as follows :
+ \begin{itemize}
+  \item Population standard deviation :	for e.g analyzing test scores of a class 
+  \item Sample standard deviation  : for e.g analyzing the effect of caffeine on reaction time on people age 18-25.
+\end{itemize}
+
+Our focus would be on first which is Population standard deviation and upon its requirements.
+The requirements based on priority for calculating standard deviation is as follows :
+
+\begin{itemize}
+  \item Since standard deviation tells you how close the numbers are w.r.t to mean so it deals with only numbers not with strings.	
+  \item For calculating the mean for natural and real numbers can be taken into account.
+  \item Since we have square root of variance so therefore standard deviation can not have negative value.
+  \item Remember as long as the variance exists, the standard deviation also exists.
+  \item The problem here is that the standard deviations will vary from individual to individual. What we want is an estimate of the common within-subject variability.Provided the same number of results are obtained for each original sample, the common within-subject variability can estimated by estimating the mean of their individual variances - and then taking the square root of this, to give the within-subject standard deviation.
+\end{itemize}
+
+\section{Assumption for standard deviation.}
+
+The variance and standard deviation can be calculated for any variable - providing it can be ordered. But the standard deviation is only an appropriate measure of dispersion for a measurement variable, and only then if the data have a symmetrical distribution - and, in many cases, a normal one. Use of the standard deviation to display the variability of observations in range plots and box-and-whisker plots is misleading if these assumptions are not met. Assumptions about what proportion of observations are included within limits of agreement are also dependent upon this assumption.
+
+For non-symmetrical (skewed) distributions there are two options :
+\begin{itemize}
+  \item Use the median as the measure of location and the inadequately range as a measure of dispersion.	
+  \item Transform the data (often by taking logarithms) so that the distribution of values is symmetrical, and then work out the standard deviation of the transformed data..
+\end{itemize}
+\section{Advantages and limitations of standard deviation.}
+Advantages are as follows:
+\begin{itemize}
+  \item Shows how much data is clustered around a mean value.	
+  \item It gives a more accurate idea of how the data is distributed
+  \item Not as affected by extreme values
+\end{itemize}
+\break
+Limitation are as follows:
+\begin{itemize}
+  \item It doesn't give you the full range of the data.	
+  \item Only used with data where an independent variable is plotted against the frequency of it.
+  \item Assumes a normal distribution pattern.
+  \item  It is very sensitive to outliers and does not use all the observations in a data set.
+\end{itemize}
+\section{Conclusion for standard deviation}
+The higher the calculated value the more the data is spread out from the mean.As SD is used as a measure of dispersion where mean is used as measure of central tendency (ie, for symmetric numerical data).
+
+
+\bibliographystyle{unsrt}  
+\begin{thebibliography}{1}
+
+\bibitem{kour2014real}
+\url{https://www.mathsisfun.com/data/standard-deviation.html}
+
+\bibitem{kour2014fast}
+\url{https://influentialpoints.com/Training/variance_and_standard_deviation-principles-properties-assumptions.htm}
+\bibitem{hadash2018estimate}
+\url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3198538/}
+
+\end{thebibliography}
+
+
+\end{document}
