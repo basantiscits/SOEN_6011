@@ -1,0 +1,115 @@
+\documentclass{article}
+
+
+\usepackage{arxiv}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{lipsum}
+\usepackage{amsmath,amssymb}
+
+\title{Debugger : A helping tool And  Checkstyle : a standard}
+
+
+\author{
+  Basant Gera (40082433)\thanks{Use footnote for providing further
+    information about author (webpage, alternative
+    address)---\emph{not} for acknowledging funding agencies.} \\
+  Dept. of Computer Science \& Software Engineering\\
+  Concordia University\\
+  \texttt{basantgera29@gmail.com} \\
+  %% examples of more authors
+   \And
+Submitted to : Pankaj Kamthan* \& Team*\\
+   Dept. of Computer Science \& Software Engineering\\
+  Concordia University\\
+  \texttt{kamthan@cse.concordia.ca} \\
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Debugging allows you to run a program interactively while watching the source code and the variables during the execution.A break point in the source code specifies where the execution of the program should stop during debugging. Once the program is stopped you can investigate variables, change their content, etc. Eclipse allows you to start a Java program in Debug mode.Eclipse provides a Debug perspective which gives you a pre-configured set of views. Eclipse allows you to control the execution flow via debug commands.
+\end{abstract}
+
+\section{Debugger tool used to find correctness of Standard Deviation .}
+
+\begin{itemize}
+  \item  Use of Conditional break : I have used Conditional break while calculating some issue wrt to  population Standard deviation or Sample Standard deviation.Because calculation of both while calculation variance is different so i found applying breakpoints on conditional break was essential and use full.
+  \item  Use exception breakpoints : Many a times while calculating I got Null point exception.Using break-point you can find out where the origin of the exception and find out the root and solve it. 
+  \item  Watch point : The watch point is a break point set up on a field or variable. It is the best feature of the Eclipse IDE. Each time the targeted field or variable is accessed or changed, the execution of the program will get stop and then you can debug.I used watch point in a break point while calculating Standard deviation. 
+  \item Evaluate (inspect and watch) : This is another good feature of the Eclipse IDE. This feature will enable you to check the value of expressions while debugging Java programs. All you need to do is right-click the statement and click on inspect. It will show you the value of the selected expression during the debugging process. The value will appear in front of you over the watch window.I used it to see the value of Mean,Sum,Variance and Standard Deviation values.
+  \item Modify values of variable : Eclipse allows you to change the values of variables during the debugging process. There is no need to restart your debugging session with minor changes in the code. You can continue to debug the program code. It will save time.I used it to change the value of (i) in the loop so to check the current set value.
+  \item Stop in Main : This feature is present in the Edit configuration window of the Debug settings. When a program is debugged with this feature enabled, the execution will stop at the first line of the main function.I used this feature when my function was on main class on first line and I wanted to check something.
+\end{itemize}
+
+
+\section{Advantages of Debugging:}
+\begin{itemize}
+  \item  Debugging helps you in solving the unknown problem For e.g Exceptions.
+  \item  To check the flow of the code.
+  \item  We can step in and step out the Eclipse debugger and can check the dependency of other variable w.r.t to current variable which has been skipped.
+  \item Identification of the problem and see the origin where its occurring.
+  \item Debugging is a very useful tools for inspecting the state of the objects and variables in your code at run time.
+  \item Modify the value of variable at run time.
+\end{itemize}
+
+\section{Disadvantage of Debugging:}
+\begin{itemize}
+  \item We can't go backwards in Eclipse debugger and see the previous value where as in some IDE's debugger we can backtrack the debugger and see its previous value.
+  \item  Many a times when running threads simultaneously debuggers gets stuck and wont go forward again.
+  \item It has a learning Curve since it varies IDE to IDE e.g Visual Studio to Eclipse.
+\end{itemize}
+
+\section{Effort made towards achieving each of these quality attributes}
+\begin{itemize}
+  \item Determining  the requirements of the function given to me and  tried to make the same without using any inbuilt function in java.
+  \item Determining where the program is getting  failed and make it more efficient, maintainable, robust, and usable without error.
+  \item Tried to make it more accurate and precise. 
+  \item One of the quality attribute is its user friendly and sleek design.
+  \item It calculate both population standard deviation and Sample standard deviation.
+\end{itemize}
+\section{Brief description about Checkstyle}
+Checkstyle is an open source tool that checks code against a configurable set of rules.It is also available as a command line tool. If you have a different IDE other than Eclipse and for these plug-ins available for Netbeans and IntelliJ IDEA and etc.\\
+Tool Used : Eclipse \\
+Plugin Version :Checkstyle 8.7.0
+
+\section{Advantages for Checkstyle}
+\begin{itemize}
+  \item Portable between IDEs[Eclipse And IntelliJ ].
+  \item Better external tooling. It's much easier to integrate check style with your external tools since it was really designed as a standalone framework.
+  \item Ability of creating your own rules. Eclipse defines a large set of styles, but checkstyle has more, and you can add your own custom rules.
+\end{itemize}
+
+\section{Disadvantages for Checkstyle}
+
+\begin{itemize}
+  \item Restrict user to particular standard.
+  \item Has a learning Curve.
+\end{itemize}
+
+
+
+
+\bibliographystyle{unsrt}  
+\begin{thebibliography}{1}
+
+\bibitem{kour2014real}
+\url{https://salfarisi25.wordpress.com/2010/12/22/advantage-and-disadvantage-of-using-ide/}
+
+\bibitem{kour2014fast}
+\url{https://softwareengineering.stackexchange.com/questions/131377/whats-the-benefit-of-avoiding-the-use-of-a-debugger}
+\bibitem{hadash2018estimate}
+\url{https://stackify.com/java-debugging-tips/#top-10-java-debugging-tips-1}
+
+\end{thebibliography}
+
+
+\end{document}
