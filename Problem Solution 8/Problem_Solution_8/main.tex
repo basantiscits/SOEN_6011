@@ -1,0 +1,278 @@
+
+\documentclass[final]{beamer}
+
+\usepackage[scale=1.24]{beamerposter} % Use the beamerposter package for laying out the poster
+
+\usetheme{confposter} % Use the confposter theme supplied with this template
+
+\setbeamercolor{block title}{fg=ngreen,bg=white} % Colors of the block titles
+\setbeamercolor{block body}{fg=black,bg=white} % Colors of the body of blocks
+\setbeamercolor{block alerted title}{fg=white,bg=dblue!70} % Colors of the highlighted block titles
+\setbeamercolor{block alerted body}{fg=black,bg=dblue!10} % Colors of the body of highlighted blocks
+% Many more colors are available for use in beamerthemeconfposter.sty
+
+%-----------------------------------------------------------
+% Define the column widths and overall poster size
+% To set effective sepwid, onecolwid and twocolwid values, first choose how many columns you want and how much separation you want between columns
+% In this template, the separation width chosen is 0.024 of the paper width and a 4-column layout
+% onecolwid should therefore be (1-(# of columns+1)*sepwid)/# of columns e.g. (1-(4+1)*0.024)/4 = 0.22
+% Set twocolwid to be (2*onecolwid)+sepwid = 0.464
+% Set threecolwid to be (3*onecolwid)+2*sepwid = 0.708
+
+\newlength{\sepwid}
+\newlength{\onecolwid}
+\newlength{\twocolwid}
+\newlength{\threecolwid}
+\setlength{\paperwidth}{48in} % A0 width: 46.8in
+\setlength{\paperheight}{36in} % A0 height: 33.1in
+\setlength{\sepwid}{0.024\paperwidth} % Separation width (white space) between columns
+\setlength{\onecolwid}{0.22\paperwidth} % Width of one column
+\setlength{\twocolwid}{0.464\paperwidth} % Width of two columns
+\setlength{\threecolwid}{0.708\paperwidth} % Width of three columns
+\setlength{\topmargin}{-0.5in} % Reduce the top margin size
+%-----------------------------------------------------------
+
+\usepackage{graphicx}  % Required for including images
+
+\usepackage{booktabs} % Top and bottom rules for tables
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION 
+%----------------------------------------------------------------------------------------
+
+\title{\textit{Think Intensively To Think Critically.}} % Poster title
+
+\author{Name : Basant Gera*  ,  Student ID : 40082433 , GitHub URL : \url{https://github.com/basantiscits/SOEN\_6011}, Funcion Assigned : Standard Deviation , Funcion Assigned Problem 5 :F1: arccos x , Funcion Assigned Problem 7 : F2: tan x} % Author(s)
+
+\institute{Submitted to Pankaj Kamthan*} % Institution(s)
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\addtobeamertemplate{block end}{}{\vspace*{2ex}} % White space under blocks
+\addtobeamertemplate{block alerted end}{}{\vspace*{2ex}} % White space under highlighted (alert) blocks
+
+\setlength{\belowcaptionskip}{2ex} % White space under figures
+\setlength\belowdisplayshortskip{2ex} % White space under equations
+
+\begin{frame}[t] % The whole poster is enclosed in one beamer frame
+
+\begin{columns}[t] % The whole poster consists of three major columns, the second of which is split into two columns twice - the [t] option aligns each column's content to the top
+
+\begin{column}{\sepwid}\end{column} % Empty spacer column
+
+\begin{column}{\onecolwid} % The first column
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVES
+%----------------------------------------------------------------------------------------
+
+\begin{alertblock}{Objectives}
+Objectives for the poster:
+\begin{itemize}
+\item Critical decisions made during the project.\newline
+\item Explain briefly why those decisions were critical.\newline
+\item Lesson learnt by doing the project for which function assigned to me $\sigma$ \textbf{\textit{Standard Deviation}}.\newline
+\item Lesson learnt by doing the review of function assigned to me in problem 5  \textbf{\textit{ F1: arccos x}}.\newline
+\item Lesson learnt by doing the review of function assigned to me in problem 7  \textbf{\textit{F2: tan x}} .\newline
+\end{itemize}
+
+\end{alertblock}
+
+%----------------------------------------------------------------------------------------
+%	QUICK REVISION
+%----------------------------------------------------------------------------------------
+
+\begin{block}{Critical decisions made during the project.}
+
+\textbf{Important decision taken are as follows :}
+\begin{itemize}
+\item  \textit{\textbf{Take Minor Decisions First}} : Population Standard devastation of 1 number is not possible.\newline
+\item  \textit{\textbf{Think of the Consequences}} :What if variance comes out to be negative.Since its not possible.\newline
+\item \textit{\textbf{Avoid Mission Impossible And Turn It into Mission Possible }} : Making a GUI error prone and giving it a user friendly message was tough to handle.
+\end{itemize}
+
+\textbf{ Population Standard Deviation}\newline
+ \begin{equation*}=
+    \quad \sigma  \sqrt\frac{{\Sigma (x- \overline{x})^2}}{n}
+  \end{equation*}
+  Where n can not be Zero.
+  \textbf{Sample Standard Deviation}
+ \begin{equation*}=
+    \quad \sigma  \sqrt\frac{{\Sigma (x- \overline{x})^2}}{n-1}
+  \end{equation*}
+  Where n can not be Zero or 1.
+\end{block}
+
+
+
+
+\end{column} % End of the first column
+
+\begin{column}{\sepwid}\end{column} % Empty spacer column
+
+\begin{column}{\twocolwid} % Begin a column which is two columns wide (column 2)
+
+\begin{columns}[t,totalwidth=\twocolwid] % Split up the two columns wide column
+
+\begin{column}{\onecolwid}\vspace{-.6in} % The first column within column 2 (column 2.1)
+
+%----------------------------------------------------------------------------------------
+%	MATERIALS
+%----------------------------------------------------------------------------------------
+
+\begin{block}{ Explain briefly why those decisions were critical}
+
+\begin{itemize}
+\item  \textit{\textbf{Take Minor Decisions First}} : What happens is we make program and realize  that things we need to keep in mind.Due to which we get some error or we need to handle them safely from the user.That's why from minor decision your program can become robust. \newline
+\item  \textit{\textbf{Think of the Consequences}} :When you know at some point of time things needs to be controlled like for e.g. Variance cant not be negative and Standard deviation can not be 0. Apart from that you need to look what condition for population and sample standard deviation. \newline
+\item \textit{\textbf{Avoid Mission Impossible And Turn It into Mission Possible }} : Many a times situation comes when you have to decide GUI based calculator over textual calculate in java Eclipse IDE.Since making design is some what tough but than textual representation.
+\end{itemize}
+
+
+\end{block}
+
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of column 2.1
+
+\begin{column}{\onecolwid}\vspace{-.6in} % The second column within column 2 (column 2.2)
+
+%----------------------------------------------------------------------------------------
+%	P
+%----------------------------------------------------------------------------------------
+
+\begin{block}{Lesson learnt by doing the review of function assigned to me in problem 5  \textbf{\textit{ F1: arccos x}}.}
+\begin{itemize}
+\item  \textit{\textbf{Learned Lambda expression}} :Lambda expression is feature of java 8.It is basically express instances of functional interfaces.lambda expressions implement the only abstract function and therefore implement functional interfaces for e.g $(int x)->System.out.println(2*x); $ .\newline
+\item  \textit{\textbf{Tried to debug the code in java 8 and learnt debugging in depth}} : Tried to use watch point and learnt debug in depth.Got to know some of advantages how debugging works in Eclipse .\newline
+\item \textit{\textbf{Learnt to calculate how exponential is calculated wit that learn how inverse of cos works in depth}} :Since every one can you Math.pow function in java but how to calculate pow and how inverse of cos works in trigonometric functions.
+\end{itemize}
+
+
+\end{block}
+
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of column 2.2
+
+\end{columns} % End of the split of column 2 - any content after this will now take up 2 columns width
+
+%----------------------------------------------------------------------------------------
+%	IMPORTANT To REMEMBER
+%----------------------------------------------------------------------------------------
+
+\begin{alertblock}{Do you know ?}
+
+Transcendental functions are of fundamental importance in mathematics, physics, mechanics, and many other fields in science and technology.
+
+\end{alertblock} 
+
+%----------------------------------------------------------------------------------------
+
+\begin{columns}[t,totalwidth=\twocolwid] % Split up the two columns wide column again
+
+\begin{column}{\onecolwid} % The first column within column 2 (column 2.1)
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE OF FACTORISATION
+%----------------------------------------------------------------------------------------
+
+\begin{block}{Lesson learnt by doing the project for which function assigned to me $\sigma$ \textbf{\textit{Standard Deviation}}.}
+\begin{itemize}
+\item  \textit{\textbf{Learnt Code review }} : Using less  loop and while loop.Those statements take time.
+\item  \textit{\textbf{Not using in build functions in java}} : Making your own functions make you learn new.
+\item \textit{\textbf{Adding software quality attributes make code better }} : Giving java doc,correct spacing and indentation make code readable and understandable.
+\end{itemize}
+
+\end{block}
+
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of column 2.1
+
+\begin{column}{\onecolwid} % The second column within column 2 (column 2.2)
+
+%----------------------------------------------------------------------------------------
+%	PROOF OF VIETA'S FORMULAS
+%----------------------------------------------------------------------------------------
+
+\begin{block}{ Lesson learnt by doing the review of function assigned to me in problem 7  \textbf{\textit{F2: tan x}} .}
+\begin{itemize}
+\item  \textit{\textbf{Learnt Code review Strategies from req. to end}} :Learnt how to review code in JUnit too .
+\item  \textit{\textbf{Learnt chekstyle and use of formatter }} :Learnt how google java style works on eclipse .
+\item \textit{\textbf{Learnt how to calculate tan in java }} Learnt how tan works in java without using in built functions.
+\end{itemize}
+
+\end{block}
+
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of column 2.2
+
+\end{columns} % End of the split of column 2
+
+\end{column} % End of the second column
+
+\begin{column}{\sepwid}\end{column} % Empty spacer column
+
+\begin{column}{\onecolwid} % The third column
+
+%----------------------------------------------------------------------------------------
+%	CONCLUSION
+%----------------------------------------------------------------------------------------
+
+\begin{block}{Lesson Learnt from Others.}
+\begin{itemize}
+\item  \textit{\textbf{Use of java do for better understanding}} :Yes it may sound bleak but when reviewing some code is not easy task.I would not able to know what other functions is doing and try to debug it to understand what the function is trying to do .So make sure when ever you write code just write java doc on it.
+\item  \textit{\textbf{Following rules and ethics which is discussed in the sprint }} : What ever discussed in team meeting is important since following that make you in sync and you would no what is write and what is wrong and what needs to be followed.
+\item \textit{\textbf{Why best is required from you ?}} :You know what is best for you and how much you can handle.Never take those task which you cant address or not able to do it.Try to make your job easy and clean and do challenging work always.  
+\end{itemize}
+
+\end{block}
+
+
+%----------------------------------------------------------------------------------------
+%	ACKNOWLEDGEMENTS
+%----------------------------------------------------------------------------------------
+
+\setbeamercolor{block title}{fg=red,bg=white} % Change the block title color
+
+\begin{block}{Refrences}
+
+\begin{thebibliography}{9}
+\bibitem{latexcompanion} 
+\url{https://en.wikipedia.org/wiki/Standard_deviation}
+ 
+\bibitem{einstein} 
+\url{https://link.springer.com/article/10.1007/s10958-015-2539-6}
+
+ 
+\bibitem{knuthwebsite} 
+\url{https://sback.it/publications/icse2018seip.pdf}
+
+
+\bibitem{knuthwebsite1} 
+\url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3328792/}
+\end{thebibliography}
+
+
+
+\end{block}
+
+\setbeamercolor{block alerted title}{fg=black,bg=norange} % Change the alert block title colors
+\setbeamercolor{block alerted body}{fg=black,bg=white} % Change the alert block body colors
+
+
+
+
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of the third column
+
+\end{columns} % End of all the columns in the poster
+
+\end{frame} % End of the enclosing frame
+
+\end{document}
